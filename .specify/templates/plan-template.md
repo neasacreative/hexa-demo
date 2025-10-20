@@ -31,7 +31,10 @@
 
 *GATE: Must pass before Phase 0 research. Re-check after Phase 1 design.*
 
-[Gates determined based on constitution file]
+- **Code Quality**: Does the proposed solution adhere to our coding standards?
+- **Testing Standards**: Are there comprehensive unit and integration tests planned?
+- **User Experience Consistency**: Does the UI/UX align with our design system?
+- **Performance Requirements**: Have performance implications been considered and addressed?
 
 ## Project Structure
 
@@ -102,4 +105,3 @@ directories captured above]
 |-----------|------------|-------------------------------------|
 | [e.g., 4th project] | [current need] | [why 3 projects insufficient] |
 | [e.g., Repository pattern] | [specific problem] | [why direct DB access insufficient] |
-
