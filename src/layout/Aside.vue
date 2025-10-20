@@ -8,7 +8,7 @@
     @openChange="onOpenChange"
     @click="onClick"
   >
-    <!-- Boilerplate: Minimal menu structure -->
+    <!-- Dashboard Link -->
     <a-menu-item key="dashboard-view">
       <template #icon>
         <unicon name="dashboard"></unicon>
@@ -18,7 +18,8 @@
       </router-link>
     </a-menu-item>
 
-    <a-menu-item @click="toggleCollapsed" key="starter">
+    <!-- Starter Page Link -->
+    <a-menu-item @click="toggleCollapsed" key="blank-page">
       <template #icon>
         <unicon name="circle"></unicon>
       </template>

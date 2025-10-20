@@ -2,47 +2,62 @@
   <div>
     <sdPageHeader title="Dashboard" class="ninjadash-page-header-main">
       <template #buttons>
-        <div class="flex items-center space-x-2">
-          <button
-            class="bg-primary text-white font-semibold px-4 py-2 rounded-md hover:bg-primary-dark transition-colors flex items-center space-x-2"
-          >
-            <unicon name="plus" width="16" class="fill-white"></unicon>
-            <span>Create New Report</span>
-          </button>
-        </div>
+        <sdButton type="primary" size="lg">
+          <unicon name="plus" width="14"></unicon>
+          <span>Create New Report</span>
+        </sdButton>
       </template>
     </sdPageHeader>
 
     <Main>
-      <!-- Main Grid -->
-      <div class="grid grid-cols-1 lg:grid-cols-2 gap-6">
-        <!-- KPIs Column -->
-        <div class="grid grid-cols-1 sm:grid-cols-2 gap-6">
-          <KpiCard
-            :loading="loading"
-            :kpi="{ title: 'Monthly Revenue', value: kpis.monthlyRevenue }"
-          />
-          <KpiCard
-            :loading="loading"
-            :kpi="{ title: 'Active Users', value: kpis.activeUsers }"
-          />
-        </div>
-
-        <!-- Activity List Column -->
-        <div>
-          <ActivityList :loading="loading" :activities="activities" />
-        </div>
-      </div>
+      <a-row :gutter="25">
+        <a-col :xxl="12" :xl="12" :lg="24" :md="24" :sm="24" :xs="24">
+          <a-row :gutter="25">
+            <a-col :xxl="12" :md="12" :sm="24" :xs="24" class="mb-25">
+              <KpiCard
+                :loading="isLoading"
+                title="Monthly Revenue"
+                :value="kpis.revenue"
+                prefix="$"
+              />
+            </a-col>
+            <a-col :xxl="12" :md="12" :sm="24" :xs="24" class="mb-25">
+              <KpiCard
+                :loading="isLoading"
+                title="Active Users"
+                :value="kpis.users"
+              />
+            </a-col>
+          </a-row>
+        </a-col>
+        <a-col
+          :xxl="12"
+          :xl="12"
+          :lg="24"
+          :md="24"
+          :sm="24"
+          :xs="24"
+          class="mb-25"
+        >
+          <ActivityList :loading="isLoading" :activities="activities" />
+        </a-col>
+      </a-row>
     </Main>
   </div>
 </template>
 
 <script setup>
 import { Main } from "../styled";
-import KpiCard from "@/components/dashboard/KpiCard.vue";
-import ActivityList from "@/components/dashboard/ActivityList.vue";
-import { useDashboardData } from "@/composables/useDashboardData";
+import KpiCard from "@/view/dashboard/KpiCard.vue";
+import ActivityList from "@/view/dashboard/ActivityList.vue";
+import { useDashboardData } from "/useDashboardData";
 
 // Use the composable to get reactive data
-const { loading, kpis, activities } = useDashboardData();
+const { isLoading, kpis, activities } = useDashboardData();
 </script>
+
+<style scoped>
+.mb-25 {
+  margin-bottom: 25px;
+}
+</style>
