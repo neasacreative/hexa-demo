@@ -1,0 +1,59 @@
+{
+  "name": "hexadash-vue",
+  "version": "1.2.0",
+  "private": true,
+  "posthtml": {
+    "recognizeSelfClosing": true
+  },
+  "scripts": {
+    "dev": "vite",
+    "serve": "vite",
+    "build": "vite build",
+    "preview": "vite preview",
+    "lint": "eslint --ext .js,.vue src"
+  },
+  "dependencies": {
+    "@ant-design/icons-vue": "^6.1.0",
+    "@fortawesome/fontawesome-svg-core": "^1.2.34",
+    "@fortawesome/free-brands-svg-icons": "^5.15.2",
+    "@fortawesome/free-solid-svg-icons": "^5.15.2",
+    "@fortawesome/vue-fontawesome": "^3.0.0-3",
+    "@iconscout/unicons": "^4.2.0",
+    "ant-design-vue": "^3.2.15",
+    "axios": "^1.6.0",
+    "core-js": "^3.45.1",
+    "js-cookie": "^3.0.1",
+    "vue": "^3.5.22",
+    "vue-i18n": "9",
+    "vue-inline-svg": "^3.0.0-beta.2",
+    "vue-router": "^4.5.1",
+    "vue-types": "^4.1.1",
+    "vue-unicons": "^3.3.1",
+    "vue3-perfect-scrollbar": "^2.0.0",
+    "vue3-styled-components": "^1.2.1",
+    "vuex": "^4.1.0"
+  },
+  "devDependencies": {
+    "@babel/eslint-parser": "^7.28.4",
+    "@babel/plugin-transform-react-jsx": "^7.27.1",
+    "@babel/preset-env": "^7.28.3",
+    "@vitejs/plugin-vue": "^6.0.1",
+    "@vitejs/plugin-vue-jsx": "^5.1.1",
+    "@vue/babel-plugin-jsx": "^2.0.1",
+    "@vue/compiler-sfc": "^3.5.22",
+    "eslint": "^8.57.1",
+    "eslint-config-prettier": "^8.1.0",
+    "eslint-plugin-prettier": "^4.0.0",
+    "eslint-plugin-vue": "^8.2.0",
+    "less": "^4.1.3",
+    "less-loader": "^11.1.0",
+    "sass": "^1.57.1",
+    "sass-loader": "13.2.0",
+    "vite": "^7.1.9"
+  },
+  "browserslist": [
+    "> 1%",
+    "last 2 versions",
+    "not dead"
+  ]
+}

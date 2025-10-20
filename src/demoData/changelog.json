@@ -1,0 +1,94 @@
+[
+    {
+        "id": 5,
+        "date": "Oct 13, 2025",
+        "version": "2.0.0",
+        "new": [
+            "Migrated from Vue CLI to Vite for faster development and builds",
+            "Added comprehensive image loading system with require() shim for Vite compatibility",
+            "Enhanced calendar component with v-calendar v3 support",
+            "Improved testimonials carousel with proper navigation arrows"
+        ],
+        "fixed": [
+            "Fixed image loading issues during Vue CLI to Vite migration",
+            "Resolved v-calendar styling and layout problems",
+            "Fixed missing navigation arrows in testimonials carousel",
+            "Resolved JSX syntax errors in Modal and Notification components",
+            "Fixed Firebase package resolution issues",
+            "Fixed countdown-js import errors in ComingSoon page",
+            "Resolved undefined length property errors in View components",
+            "Fixed Ant Design theme customization implementation",
+            "Resolved Unicons rendering issues",
+            "Fixed dayjs plugin import errors",
+            "Resolved Vue 3 composition API warnings",
+            "Replaced xlsx with exceljs for better security (fixes 2 high vulnerabilities)",
+            "Removed unused vue-json-csv package (fixes 1 high vulnerability)",
+            "Removed auth0-lock due to React dependency conflicts (fixes 4 vulnerabilities)",
+            "Prepared for gradual migration from vue-unicons to lucide-vue-next (both libraries available)",
+            "Improved sidebar menu active state logic with better route matching",
+            "Enhanced v-calendar header styling with better navigation and spacing"
+        ],
+        "updated": [
+            "Updated to Vite 7.1.9 for modern build tooling",
+            "Updated v-calendar to v3.0.0 with new API and styling",
+            "Updated Vue 3 composition API usage patterns",
+            "Updated image asset handling for Vite compatibility",
+            "Updated Firebase v10+ modular imports",
+            "Updated Swiper v8+ with proper module configuration",
+            "Updated Ant Design Vue imports and theme customization",
+            "Updated styled-components usage for better compatibility",
+            "Updated dayjs plugin imports to ES6 modules",
+            "Updated package.json dependencies for latest versions",
+            "Removed unused packages to reduce bundle size (jest-worker, css-loader, babel-plugin-import, esm, vite-plugin-style-import, vite-plugin-vue-setup-extend, babel-eslint)"
+        ]
+    },
+    {
+        "id": 4,
+        "date": "Feb 19, 2023",
+        "version": "1.3.0",
+        "new": [
+            "Added FireStore CRUD"
+        ],
+        "fixed": false,
+        "updated": false
+    },
+    {
+        "id": 3,
+        "date": "Jan 4, 2023",
+        "version": "1.2.0",
+        "new": false,
+        "fixed": [
+            "NPM errors and warnings",
+            "Minor Style issues"
+        ],
+        "updated": [
+            "Updated Vue JS",
+            "Updated NPM packages compatible with latest Vue JS",
+            "Updated Ant Design to 3.2.15",
+            "Removed momentjs"
+        ]
+    },
+    {
+        "id": 2,
+        "date": "Dec 29, 2022",
+        "version":"1.1.0",
+        "new": [
+            "Added 4 New Home Page in Vue Version"
+        ],
+        "fixed": [
+            "Minor Style issues"
+        ],
+        "updated": false
+    },
+    {
+        "id": 1,
+        "date": "Dec 26, 2022",
+        "version":"1.0.0",
+        "new": [
+            "Initial Release"
+        ],
+        "fixed": false,
+        "updated": false
+    }
+]
+
